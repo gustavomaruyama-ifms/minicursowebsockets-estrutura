@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat com Websocket</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body ng-controller="chatController">
+    <!--Menu-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand centralizar-logo" >
+                    <img alt="Brand" src="images/chat-icon.png">
+                </a>
+                <label class="navbar-text">Minicurso - Chat com Websockets</label>
+            </div>
+        </div>
+    </nav>
+
+    <!--Cabecalho-->
+    <div class="container">
+        <div class="page-header fix">
+            <h1>Minicurso |
+                <small>Chat com websocket</small>
+            </h1>
+        </div>
+    </div>
+
+    <!--Container de mensagens-->
+    <div class="container">
+        <div>
+            <div>
+                <label></label>
+                <label></label>
+            </div>
+        </div>
+    </div>
+
+    <!--Fomulario com campo de nome e mensagem-->
+    <div class="container">
+        <div class="row">
+            <form>
+
+                <div class="form-group col-md-2">
+                    <label>Nome:</label>
+                    <input class="form-control" type="text">
+                </div>
+
+                <div class="form-group col-md-10">
+                    <label>Mensagem:</label>
+
+                    <div class="input-group">
+                        <input class="form-control" type="text">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">Enviar
+                        </button>
+                    </span>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
